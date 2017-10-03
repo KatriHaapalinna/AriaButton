@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Vaadin-Package-Version: 1
-Vaadin-Addon: aria-button-2.0-ALPHA1.jar
-Vaadin-License-Title: Apache License 2.0
-Implementation-Vendor: ${project.organization.name}
-Implementation-Title: AriaButton Add-on
-Implementation-Version: 2.0-ALPHA1
