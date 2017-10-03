@@ -1,0 +1,7 @@
+org\vaadin\addons\aria_button\AriaButton.class
+org\vaadin\addons\aria_button\client\AriaButtonServerRpc.class
+org\vaadin\addons\aria_button\client\AriaButtonState.class
+org\vaadin\addons\aria_button\client\AriaButtonConnector.class
+org\vaadin\addons\aria_button\client\AriaButtonConnector$1.class
+org\vaadin\addons\aria_button\client\AriaButtonConnector$1$1.class
+org\vaadin\addons\aria_button\AriaButton$1.class
