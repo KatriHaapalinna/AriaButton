@@ -1,11 +1,8 @@
 .classpath
 .project
 .settings
-aria-button-addon/target/
-aria-button-addon/.classpath
-aria-button-addon/.project
-aria-button-addon/.settings
-aria-button-demo/target/
-aria-button-demo/.classpath
-aria-button-demo/.project
-aria-button-demo/.settings
+aria-button-addon/target
+aria-button-demo/target
+*.classpath
+*.project
+*.settings

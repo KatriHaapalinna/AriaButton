@@ -11,8 +11,8 @@ import com.vaadin.ui.Button;
  * (<code>aria-label, aria-labelledby, aria-description</code> to
  * {@link com.vaadin.ui.Button}
  *
- * @author Katri Haapalinna
- *
+ * See <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques">ARIA Documentation</a>
+ * for detailed information about ARIA accessibility technology
  */
 public class AriaButton extends AbstractExtension {
     private AriaButtonServerRpc rpc = new AriaButtonServerRpc() {
@@ -26,14 +26,10 @@ public class AriaButton extends AbstractExtension {
      * Sets <code>aria-label</code> attribute to specified button.<br>
      * <br>
      *
-     * If the label text is visible on screen, authors should use
-     * {@link #extendAriaLabelledBy(Button, String)} to set
-     * <code>aria-labelledby</code> atrribute instead. User agents give
-     * precedence to <code>aria-labelledby</code> over <code>aria-label</code>
-     * when computing the accessible name property. Long texts are not
-     * recommended, authors should use
-     * {@link #extendAriaDescribedBy(Button, String)} for more verbose
-     * information.
+     * User agents give precedence to <code>aria-labelledby</code> over
+     * <code>aria-label</code> when computing the accessible name property.
+     * Long texts are not recommended, {@link #extendAriaDescribedBy(Button, String)}
+     * should be used for more verbose information.
      *
      * @param button
      *            Button
@@ -51,15 +47,10 @@ public class AriaButton extends AbstractExtension {
      * Sets <code>aria-labelledby</code> attribute to specified button.<br>
      * <br>
      *
-     * If the label text is not visible on screen, authors should use
-     * {@link #extendAriaLabel(Button, String)} to set <code>aria-label</code>
-     * attribute instead. User agents give precedence to
-     * <code>aria-labelledby</code> over <code>aria-label</code> when computing
-     * the accessible name property.
-     *
-     * Long texts are not recommended, authors should use
-     * {@link #extendAriaDescribedBy(Button, String)} for more verbose
-     * information.
+     * User agents give precedence to <code>aria-labelledby</code> over
+     * <code>aria-label</code> when computing the accessible name property.
+     * Long texts are not recommended, {@link #extendAriaDescribedBy(Button, String)}
+     * should be used for more verbose information.
      *
      * @param button
      *            Button

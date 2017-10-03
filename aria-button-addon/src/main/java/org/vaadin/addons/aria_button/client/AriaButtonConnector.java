@@ -53,8 +53,7 @@ public class AriaButtonConnector extends AbstractExtensionConnector {
 
                         if (ariaLabelledBy != null
                                 && !ariaLabelledBy.isEmpty()) {
-                            buttonEl.setAttribute("aria-labelledby",
-                                    ariaLabelledBy);
+                            addAriaLabelledBy(buttonEl, ariaLabelledBy);
                             buttonEl.removeAttribute("aria-label");
                             getState().ariaLabel = "";
                         } else if (ariaLabel != null && !ariaLabel.isEmpty()) {
@@ -71,6 +70,16 @@ public class AriaButtonConnector extends AbstractExtensionConnector {
             }
 
         });
+    }
+    
+    private void addAriaLabelledBy(Element buttonEl, String ariaText) {
+        Element label = DOM.createLabel();
+        label.setId("label-" + HTMLPanel.createUniqueId());
+        label.setInnerText(ariaText);
+        label.getStyle().setDisplay(Display.NONE);
+        label.getStyle().setVisibility(Visibility.HIDDEN);
+        buttonEl.setAttribute("aria-labelledby", label.getId());
+        buttonEl.getParentElement().appendChild(label);
     }
 
     private void addAriaDescribedBy(Element buttonEl, String ariaText) {
