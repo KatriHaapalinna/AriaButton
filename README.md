@@ -1,10 +1,6 @@
 # AriaButton Add-on for Vaadin 8
 
-${ComponentClassName} is a UI component add-on for Vaadin 8.
-
-## Online demo
-
-Try the add-on demo at <url of the online demo>
+AriaButton is an extension for adding aria-label, aria-labelledby, and aria-describedby attributes to Button Vaadin 8.
 
 ## Download release
 
@@ -51,15 +47,8 @@ Debugging client side code in the aria-button-demo project:
  
 ## Release notes
 
-### Version 1.0-SNAPSHOT
-- ...
-- ...
-
-## Roadmap
-
-This component is developed as a hobby with no public roadmap or any guarantees of upcoming releases. That said, the following features are planned for upcoming releases:
-- ...
-- ...
+### Version 2.0-ALPHA1
+- First release for Vaadin 8
 
 ## Issue tracking
 
@@ -79,32 +68,8 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 Add-on is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
-AriaButton is written by <...>
-
 # Developer Guide
 
 ## Getting started
 
-Here is a simple example on how to try out the add-on component:
-
-<...>
-
-For a more comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
-
-## Features
-
-### Feature A
-
-<...>
-
-### Feature B
-
-<...>
-
-### Feature C
-
-<...>
-
-## API
-
-AriaButton JavaDoc is available online at <...>
+For a comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
