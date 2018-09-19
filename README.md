@@ -1,3 +1,6 @@
+[![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/ariabutton-add-on)
+[![Stars on Vaadin Directory](https://img.shields.io/vaadin-directory/star/ariabutton-add-on.svg)](https://vaadin.com/directory/component/ariabutton-add-on)
+
 # AriaButton Add-on for Vaadin 8
 
 AriaButton is an extension for adding aria-label, aria-labelledby, and aria-describedby attributes to Button Vaadin 8.
